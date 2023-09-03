@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Quantico';
+    src: url('fonts/Quantico/Quantico-Regular.ttf');
+}
+
+
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1a1a1a;
+    color: #fff;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10vh 20vh;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    max-width: 10vh;
+    padding-left: 1vh;
+    height: auto;
+    width: auto;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 5vh;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e74c3c;
+    transition: border-bottom 1s, color 0.3s ease; 
+    border-bottom: 2px solid #e74c3c; 
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    
+    .bar {
+        background-color: #fff;
+        height: 0.5vh;
+        width: 4vh;
+        margin: 0.5vh 0.5vh;
+        padding-right: 3vh;
+        transition: all 0.3s ease;
+    }
+    .nav-links ul {
+        display: none;
+        flex-direction: column;
+        background-color: #1a1a1a;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        opacity: 0; 
+        transform: translateY(-10px); 
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .nav-links.show ul {
+        display: block;
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .nav-links.show ul {
+        opacity: 1;
+        pointer-events: auto;
+        display: flex;
+    }
+}
+
+
+/*Hero Page Styles*/
+
+/*About Us Styles*/
+.about-section {
+    padding: 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+    font-family: 'Quantico', sans-serif;
+}
+
+.timeline-section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.timeline {
+    position: relative;
+    margin-top: 30px;
+}
+
+.timeline-event {
+    padding: 20px;
+    border: 2px solid #e74c3c;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-event h3 {
+    color: #e74c3c;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.timeline-event p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Interactive Timeline Styles */
+.timeline-event:hover {
+    background-color: #e74c3c;
+    color: #fff;
+    border-color: #fff;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-event:hover h3 {
+    color: #fff;
+}
+
+.timeline-event:hover p {
+    color: #fff;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 0.5vh 1vh;
+    background-color: #607D8B; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #c0392b; /* Darker red color on hover */
+    color: #fff; /* White text color on hover */
+}
+
+
+/* Add other CSS rules for animation or interactivity as needed */
+
+
