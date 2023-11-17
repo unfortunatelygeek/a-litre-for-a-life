@@ -1,7 +1,7 @@
 ## A Litre For A Life ##
 # A Comprehensive Blood Donation Website #
 
-<i>Made with HTML, CSS, JavaScript and Flask</i>
+<i>Made with HTML, CSS, JavaScript and Flask</i> <br>
 <p>Project Developers: </p>
 
 # About #
