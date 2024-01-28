@@ -9,8 +9,10 @@ This is the code repository for A Litre For A Life, a website designed to provid
 
 # Clone this repo #
 Navigate into the project directory
-Install dependencies with pip install -r requirements.txt
-Run python app.py
+Install dependencies with 
+```bash pip install -r requirements.txt ```
+To run:
+``` bash python app.py```
 
 # Contributing #
 Contributions are welcome! Please fork this repo and create a pull request to contribute code enhancements or fixes.
